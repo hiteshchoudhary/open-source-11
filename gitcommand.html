@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Git Commands</title>
+</head>
+<body>
+    <h1>Git Commands</h1>
+    
+    <h2>Configuration</h2>
+    <ul>
+        <li><code>git config --global user.name "Your Name"</code></li>
+        <li><code>git config --global user.email "your.email@example.com"</code></li>
+        <li><code>git config --list</code></li>
+    </ul>
+    
+    <h2>Basic Commands</h2>
+    <ul>
+        <li><code>git init</code> - Initialize a new Git repository</li>
+        <li><code>git clone https://github.com/user/repository.git</code> - Clone a repository</li>
+        <li><code>git status</code> - Check the status of your repository</li>
+        <li><code>git add filename</code> - Add a file to the staging area</li>
+        <li><code>git add .</code> - Add all files to the staging area</li>
+        <li><code>git commit -m "Commit message"</code> - Commit changes</li>
+        <li><code>git push origin branch-name</code> - Push changes to a remote repository</li>
+        <li><code>git pull</code> - Pull changes from a remote repository</li>
+    </ul>
+    
+    <h2>Branching</h2>
+    <ul>
+        <li><code>git branch</code> - List branches</li>
+        <li><code>git branch branch-name</code> - Create a new branch</li>
+        <li><code>git checkout branch-name</code> - Switch to a branch</li>
+        <li><code>git merge branch-name</code> - Merge a branch into the current branch</li>
+        <li><code>git branch -d branch-name</code> - Delete a branch</li>
+    </ul>
+    
+    <h2>Stashing</h2>
+    <ul>
+        <li><code>git stash</code> - Stash changes</li>
+        <li><code>git stash list</code> - List stashed changes</li>
+        <li><code>git stash apply</code> - Apply stashed changes</li>
+        <li><code>git stash drop</code> - Drop stashed changes</li>
+    </ul>
+    
+    <h2>Remote Repositories</h2>
+    <ul>
+        <li><code>git remote add origin https://github.com/user/repository.git</code> - Add a remote repository</li>
+        <li><code>git remote -v</code> - List remote repositories</li>
+        <li><code>git push origin master</code> - Push to the master branch</li>
+        <li><code>git pull origin master</code> - Pull from the master branch</li>
+        <li><code>git fetch</code> - Fetch changes from a remote repository</li>
+    </ul>
+    
+    <h2>Reverting Changes</h2>
+    <ul>
+        <li><code>git reset --hard</code> - Reset to the last commit, discarding all changes</li>
+        <li><code>git reset --soft</code> - Reset to the last commit, keeping changes in the working directory</li>
+        <li><code>git revert commit-id</code> - Revert a specific commit</li>
+    </ul>
+    
+    <h2>Logs and History</h2>
+    <ul>
+        <li><code>git log</code> - View commit history</li>
+        <li><code>git log --oneline</code> - View commit history in one line per commit</li>
+        <li><code>git log --graph</code> - View commit history as a graph</li>
+        <li><code>git diff</code> - Show changes between commits, commit and working tree, etc.</li>
+    </ul>
+</body>
+</html>
