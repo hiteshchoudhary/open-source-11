@@ -1,1 +1,3 @@
 darkmode is enabled
+
+lightmode is disabled
