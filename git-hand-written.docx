@@ -1,0 +1,112 @@
+GIT
+
+
+git –version => for check your git version
+
+git config --list => to check username or email and list
+git config --global user.email "your-email@example.com" => to set or update email
+git config --global user.name "Your Name” => to set or update username
+git config --list => to recheck username or email and list set or not
+
+
+Create repo
+git status
+git init => it will be hide sometime to see that folder in vs code =>ctrl+, it will open search module after that search =>files.exclude 
+After that do =>**/.git TO =>**/.git false
+
+
+GIT ADD
+To add files in git you need a files in out side of git folder and inside in main folder like you make folder with name of first and in that you initialise git so you need to create files (which you wanna add in git) in first folder for essay access.
+=>git add one.html one.css
+=>git status
+TO REMOVE FILE
+=>git rm –cached one.css
+
+
+GIT COMMIT
+When you make changes to files in your working directory and then stage them (using git add), git commit saves a snapshot of those staged changes in your local repository. This snapshot becomes a new entry in your project's commit history, with a unique ID.
+=>git commit -m “any message”
+=>git status
+
+
+
+
+GIT LOG
+=>git log
+=>git log –oneline 
+Its use for see content in one line
+
+
+GIT CHANGE CODE EDITOR
+Because git by default use Vim .
+To change vs code as git code editor do this step.
+=>open vs code ⇒ ctrl+shift+p 
+Try to search =>command:install ‘code’ command in PATH
+OR YOU CAN DIRECTLY USE THIS CODE IN VS CODE TERMINAL 
+=>git config --global core.editor "code --wait"
+
+
+GIT KEEP
+Its file with name .gitkeep 
+Its uses like we create two folder with name image and log now we need log folder never be empty or image folder can be empty so we need make a .gitkeep file in log folder so when we run git status cmd it will not return error in image folder but it will return error in log folder only when its empty. 
+GIT IGNORE
+This file is used like there’s some files in the project which we dont need or dont want to upload in git so for that we use the .gitignore file. In this file we need to define the file names which we don't want to upload and after that we need to add a .gitignore file and also need to commit a .gitignore file.
+
+
+COMMIT/TREE/BOLB 
+=>git log –oneline
+output:
+
+
+
+
+
+=>git show -s --pretty=raw 72c9e1d
+Output:
+
+ =>git ls-tree 54b4b18f994e54a7d5b6819b18e7b692672ab1b3
+Output:
+
+=>git show 6fd7df1b3d45eafc6c7f3d8f0428c9bdf4172d54
+Output:
+
+
+
+BRANCH
+=>git branch  
+>to check how many branch we have
+=>git branch second
+>to add new branch 
+git switch second
+>to switch branch
+=>git log
+=>git switch master
+=>git switch -c dark-mode 
+=>git checkout orange-mode
+=>git branch -m <old-branch-name> <new-branch-name>
+=>git branch -d <branch-name>
+
+
+MERGE BRANCH
+=>git checkout development
+=>git merge new
+
+GIT PUSH
+
+To push the repo in git we need github account.
+Goto git hub click on this icon 
+.
+To add repo. Give name to repo and scroll down
+Copy this paste into vs terminal .
+=>git remote add origin https://github.com/Nikk333/first.git
+=>git remote -v  
+This is to check connection is open or not with remote if all things are okay than it will return this.
+
+For push you must have branch or files .
+=>git push -u origin mainbranch
+This code is used for only one time to connect with remote branch and repo to github.
+After this you need to do add and commit the files.
+=>git add myfile.html
+=>git commit -m myfile.html
+=>git push 
+And all set you can go to github and check that repo is added or not.
