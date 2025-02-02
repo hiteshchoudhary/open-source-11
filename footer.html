@@ -1,0 +1,3 @@
+<footer>
+    Copyright
+</footer>
