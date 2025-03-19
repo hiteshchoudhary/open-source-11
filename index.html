@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Learn About open source</title>
-</head>
-<body>
-    Learn to make a pull request
-    <section>Feature</section>
-</body>
+  </head>
+  <body class="text-green-700">
+    <navbar>
+      <nav
+        class="flex flex-row justify-between px-20 py-4 bg-gray-100 items-center"
+      >
+        <img src="./images/hacked_img.png" class="w-14 h-12" />
+        <p class="text-5xl">Chai aur Code</p>
+        <ul class="flex flex-row space-x-8 text-xl">
+          <li class="cursor-pointer hover:text-green-400">Home</li>
+          <li class="cursor-pointer hover:text-green-400">About</li>
+          <li class="cursor-pointer hover:text-green-400">Contact Us</li>
+        </ul>
+      </nav>
+    </navbar>
+    <section class="flex my-10">
+      <p class="text-6xl font-bold uppercase">Learn to make a pull request</p>
+    </section>
+    <section class="text-3xl font-bold uppercase">Features</section>
+  </body>
 </html>
