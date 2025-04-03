@@ -1,0 +1,203 @@
+/*-------------------------------------- Navigation Bar ------------------------------------*/
+/* For Removing Extra margin */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat,sans-serif; 
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  
+  .Navbar li a:link,
+  .Navbar li a:visited {
+      text-decoration: none;
+      color: #ffffff;
+  }
+  
+  .Navbar li a:hover {
+      color: #f50056;
+  }
+  
+  .Navbar li a:active {
+      text-decoration: none;
+  }
+  
+  /* Define the main Navigation block */
+  .Navbar {
+    display: block;
+    height: 60px;
+    background-color: #0a192c;
+  }
+  /* Remove bullets, margin and padding */
+  .Navbar ul {
+     width: 95%;
+     list-style: none;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+  }
+  
+  /* Define the block styling for the links */
+  .Navbar li {
+    padding: 0px 25px;
+    font-size:16px; 
+    align-items: center;
+    height: 60px;
+    color: #ffffff;
+    display: flex;
+    line-height: 1.5;
+  }
+  
+  .Navbar li:first-child {
+    margin-right: auto;
+    font-size: 20px;
+  }
+  
+  .Navbar li:last-child{
+    padding: 0 1px;
+  }
+  
+  .Navbar li:nth-last-child(2){
+    padding: 0 2px;
+  }
+  /*-------------------------------------- Home Body Content ------------------------------*/
+  
+  .content-h {
+    height: 640px;
+    width: 100%;
+    background-color: #0b193c;
+    position: relative;
+    overflow: hidden;
+  }
+  .bodycont {
+    font-size: 70px; 
+    position: absolute;
+    top: 255px;
+    left: 110px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 0.80;
+  }
+  .bodycont2 {
+    font-size: 15px;
+    font-weight: 550;
+    color: #ffffff;
+    word-spacing: 2px;
+    line-height: 1.5;
+    position: absolute;
+    top: 370px;
+    left: 110px;
+  }
+  .bodycont3 {
+    height: 58vw;
+    width: 100%;
+    position: relative;
+  }
+  
+  .body-text {
+    word-spacing: 6px; 
+    line-height: 1.5;
+    font-size: 15px;
+    width: 37%;
+    font-weight: 500;
+    position: absolute;
+    left: 60vw;
+    top: 15vh;
+    color:#6a7080
+  }
+  
+  .body-text2 {
+    position: absolute;
+    left: 10vw;
+    top: 15vh;
+    font-size: 60px;
+    font-weight: 510;  word-spacing: 6px;
+    color: #0a183d
+  }
+  
+  .image-container{
+    display: flex;
+    position: absolute;
+    top: 24vw;
+    left: 9.8vw;
+  }
+  
+  .image-container img{
+    height: 15vw;
+    width: 15vw;
+    margin: 6.5vw;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .body-text1{
+    padding: 0 5.9vw;
+    align-items: center;
+    display: inline;
+    position: relative;
+    top: 47vw;
+    left: 9.8vw;
+    color: #0a183d;
+    font-weight: 600;
+    font-size: 1.8vw;
+  }
+  
+  .body-text1:last-child {
+    padding: 0 0 0 5.9vw;
+  }
+
+  /*-------------------------------------- Footer and copyright ------------------------------*/
+
+.footer {
+    background-color: #0b193c;
+    height:30vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .footer-text {
+    display: flex;
+    position: relative;
+    top: 1vh;
+    left: 24.5vw;
+    width: 130px;
+    text-align: right;
+    color: #ffffff;
+  }
+  
+  .footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer li {
+    padding: 0 10px;
+    align-items: center;
+    display: flex;
+    transform: translate(29vw, 5vh);
+  }
+  .footer-name {
+  position: absolute;
+  left: 8.5vw;
+  top: 8vh;
+  font-size: 20px;
+  }
+  .footer-copyright {
+    font-size: 11px; 
+    position: absolute; 
+    left: 8.5vw; 
+    top: 14vh; 
+    color: #505565; 
+    word-spacing: 2;
+  }
+  .vertical-line {
+    height: 100px; 
+    width: 1px;   
+    background-color: #424655; 
+    margin: 0 auto; 
+  }
+  
