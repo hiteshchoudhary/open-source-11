@@ -2,11 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Learn About open source</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn About Open Source</title>
+    
+    <!-- comments are added to the code for better understanding i know its a simple code but for my dedication to write commets from AI joke -> hehe.. -->
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
-<body>
-    Learn to make a pull request
-    <section>Feature</section>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen flex flex-col items-center justify-center text-white">
+
+    <!-- Heading Section -->
+    <div class="text-center space-y-6">
+        <h1 class="text-4xl md:text-6xl font-bold drop-shadow-lg">Thank You, Sir!</h1>
+        <p class="text-xl md:text-2xl font-semibold">For Teaching  Git & GitHub</p>
+        <h2 class="text-2xl md:text-4xl mt-8 font-semibold">Learning to Make a Pull Request..</h2>
+    </div>
+
+    <!-- Feature Section -->
+    <section class="mt-16 h-[40vh] bg-white/10 p-12 rounded-3xl shadow-2xl backdrop-blur-md w-1/2 max-w-4xl mx-auto">
+        <h3 class="text-4xl font-bold mb-6 text-center">✨ Features:</h3>
+        <ul class="list-disc list-inside text-left text-xl space-y-4">
+          <li>Understand Git Basics</li>
+          <li>Commit with Best Practices</li>
+          <li>Learn Branching and Merging</li>
+          <li>Master Pull Requests</li>
+          <li>Contribute to Open Source</li>
+        </ul>
+        <h3 class="text-right mt-16 text-2xl font-semibold">Thank you ✨</h3>
+      </section>
+      
+
+    <!-- GSAP Animation Script -->
+    <script>
+        gsap.from("h1", {
+            y: -100,
+            opacity: 0,
+            duration: 1.5,
+            ease: "bounce"
+        });
+
+        gsap.from("h2", {
+            y: 100,
+            opacity: 0,
+            duration: 1.5,
+            delay: 0.5
+        });
+
+        gsap.from("section", {
+            scale: 0.5,
+            opacity: 0,
+            duration: 1.5,
+            delay: 1
+        });
+    </script>
+
 </body>
 </html>
