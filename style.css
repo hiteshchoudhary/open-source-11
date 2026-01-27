@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+section {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
