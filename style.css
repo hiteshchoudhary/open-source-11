@@ -1,8 +1,8 @@
-h1{
+h1,h2{
     color: #333;
     font-size: large;
     font-family: Arial, sans-serif;
     text-align: center;
     text-decoration: underline;
-    
+
 }
